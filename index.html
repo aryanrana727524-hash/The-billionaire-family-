@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Billionaire - Ultimate Pocket Money Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0b0f19; }
+        
+        /* Ultra Smooth Premium Glow Animation */
+        .premium-glow {
+            animation: pulseGlow 3s infinite ease-in-out;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.2); transform: scale(1); }
+            50% { box-shadow: 0 0 35px rgba(16, 185, 129, 0.5); transform: scale(1.01); }
+        }
+
+        /* Custom Ticker Marquee text effect */
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            animation: marquee 25s linear infinite;
+        }
+
+        /* 👑 EXTREMELY ATTRACTIVE BUTTON EFFECTS */
+        @keyframes shimmerEffect {
+            0% { left: -150%; }
+            50% { left: 150%; }
+            100% { left: 150%; }
+        }
+        .animate-shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+        .animate-shimmer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -150%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-25deg);
+            animation: shimmerEffect 2.5s infinite linear;
+        }
+
+        @keyframes pulseWaves {
+            0% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+            70% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 20px rgba(16, 185, 129, 0); }
+            100% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        .btn-pulse-wave {
+            animation: pulseWaves 2s infinite ease-in-out;
+        }
+
+        @keyframes pulseWavesWhatsapp {
+            0% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5); }
+            70% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 20px rgba(34, 197, 94, 0); }
+            100% { transform: scale(0.95); opacity: 0.8; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        .btn-pulse-wave-wa {
+            animation: pulseWavesWhatsapp 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen pb-24 relative overflow-x-hidden">
+
+    <div class="w-full bg-emerald-950/80 border-b border-emerald-500/20 py-2 overflow-hidden backdrop-blur-sm fixed top-0 left-0 z-50">
+        <div class="whitespace-nowrap flex animate-marquee text-xs font-bold tracking-wide text-emerald-400 gap-12">
+            <span>⚡ LIVE WITHDRAWALS: Amit S. withdrew ₹450 via Paytm</span>
+            <span>🔥 Priya M. just earned ₹1,200 from Bug Loot</span>
+            <span>💎 Rohan K. withdrew ₹850 via UPI Instantly</span>
+            <span>🚀 Vikash J. just received ₹2,100 in Bank A/c</span>
+        </div>
+    </div>
+
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <main class="max-w-xl mx-auto px-4 pt-20 text-center relative z-10">
+        
+        <div class="bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 px-5 py-2 rounded-full text-[11px] font-extrabold tracking-wider text-emerald-400 mb-6 inline-flex items-center gap-2 shadow-lg backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            VERIFIED SOCIAL MEDIA PARTNER
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-extrabold uppercase tracking-tight leading-[1.15] mb-4">
+            Ghar Baithe Roz <br><span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">₹100 - ₹500</span> Bank Me Lelo 🚀
+        </h1>
+        <p class="text-slate-400 mb-6 text-base font-medium max-w-md mx-auto">Zero Investment. No Skills Required. Sirf free loot offers aur simple campaigns se apna daily kharcha nikaalo!</p>
+
+        <a href="https://t.me/YOUR_TELEGRAM_USERNAME" class="tg-link btn-pulse-wave animate-shimmer block w-full bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-2xl py-5 rounded-2xl mb-4 uppercase tracking-wider transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] active:scale-[0.98] shadow-[0_10px_30px_rgba(16,185,129,0.4)] flex items-center justify-center gap-3">
+            <svg class="w-7 h-7 fill-slate-950" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.24-5.54 3.65-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.97-.74 3.79-1.65 6.32-2.73 7.57-3.25 3.61-1.48 4.36-1.74 4.85-1.75.11 0 .35.03.5.16.13.12.17.29.18.41-.01.07.01.22-.01.35z"/>
+            </svg>
+            <span>💯Join Telegram & Start Earning💸</span>
+        </a>
+
+        <a href="https://chat.whatsapp.com/YOUR_WHATSAPP_LINK" class="wa-link btn-pulse-wave-wa animate-shimmer block w-full bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 hover:from-green-400 hover:to-emerald-400 text-slate-950 font-black text-2xl py-5 rounded-2xl mb-12 uppercase tracking-wider transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] active:scale-[0.98] shadow-[0_10px_30px_rgba(34,197,94,0.4)] flex items-center justify-center gap-3">
+            <svg class="w-7 h-7 fill-slate-950" viewBox="0 0 24 24">
+                <path d="M12.004 2c-5.517 0-9.994 4.476-9.994 9.993 0 1.763.459 3.423 1.265 4.873l-1.341 4.903 5.018-1.317c1.408.766 3.014 1.204 4.722 1.204 5.517 0 10.002-4.477 10.002-9.994C21.996 6.476 17.521 2 12.004 2zm6.262 14.18c-.256.719-1.285 1.4-1.791 1.48-.466.075-1.074.135-3.13-.715-2.63-1.088-4.324-3.766-4.456-3.941-.131-.175-1.062-1.411-1.062-2.69 0-1.28.674-1.91.914-2.164.24-.254.524-.317.7-.317.175 0 .349.002.502.01.161.008.374-.061.585.446.216.518.739 1.802.803 1.93.064.129.108.279.022.45-.086.173-.129.279-.257.428-.129.15-.271.334-.387.45-.129.129-.264.269-.114.527.151.257.671 1.102 1.436 1.782.987.876 1.821 1.147 2.079 1.276.257.129.408.107.558-.064.15-.172.643-.75.815-1.007.171-.257.342-.215.579-.129.237.086 1.499.707 1.757.836.257.129.429.193.493.301.064.108.064.624-.192 1.343z"/>
+            </svg>
+            <span>Join WhatsApp For Daily Earning </span>
+        </a>
+
+        <div class="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-4 mb-8 flex justify-around items-center text-center backdrop-blur-md relative overflow-hidden shadow-[0_0_30px_rgba(16,185,129,0.05)]">
+            <div class="absolute top-1.5 right-3 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                <span class="text-[8px] font-bold text-emerald-400 tracking-widest uppercase">Live Server Feed</span>
+            </div>
+            <div>
+                <p class="text-xl font-black text-emerald-400 tabular-nums" id="count-members">0</p>
+                <p class="text-[10px] uppercase font-bold tracking-wider text-slate-400 mt-1">Total Members</p>
+            </div>
+            <div class="border-l border-slate-800 h-10"></div>
+            <div>
+                <p class="text-xl font-black text-cyan-400 tabular-nums" id="count-earnings">0</p>
+                <p class="text-[10px] uppercase font-bold tracking-wider text-slate-400 mt-1">User Earnings</p>
+            </div>
+            <div class="border-l border-slate-800 h-10"></div>
+            <div>
+                <p class="text-xl font-black text-amber-400 tabular-nums" id="count-today">0</p>
+                <p class="text-[10px] uppercase font-bold tracking-wider text-slate-400 mt-1">Joined Today</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 mb-12 text-left">
+            <div class="bg-slate-900/40 backdrop-blur-md p-4 rounded-2xl border border-slate-800/80 flex items-start gap-3">
+                <div class="bg-emerald-500/10 p-2 rounded-xl text-emerald-400 font-bold">✓</div>
+                <div>
+                    <h3 class="font-bold text-sm text-slate-200">100% Verified</h3>
+                    <p class="text-[11px] text-slate-400 mt-0.5">Pehle hum test karte hain, fir aapko dete hain.</p>
+                </div>
+            </div>
+            <div class="bg-slate-900/40 backdrop-blur-md p-4 rounded-2xl border border-slate-800/80 flex items-start gap-3">
+                <div class="bg-cyan-500/10 p-2 rounded-xl text-cyan-400 font-bold">⚡</div>
+                <div>
+                    <h3 class="font-bold text-sm text-slate-200">Instant Cash</h3>
+                    <p class="text-[11px] text-slate-400 mt-0.5">No minimum limit, sidha bank transfer.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-xs font-extrabold mb-4 text-slate-400 tracking-widest uppercase text-left pl-1">📢 OUR COMMUNITY PREVIEW</h2>
+        
+        <div class="w-full bg-[#17212b] rounded-2xl border border-slate-800 shadow-2xl mb-8 text-left overflow-hidden relative">
+            <div class="relative h-40 flex items-end p-5" style="background: linear-gradient(180deg, rgba(23,33,43,0.2) 0%, #17212b 100%), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80'); background-size: cover; background-position: center;">
+                <div>
+                    <h2 class="text-2xl font-bold text-white tracking-wide">The Billionaire</h2>
+                    <p class="text-xs text-sky-400 font-medium mt-0.5">5,853 subscribers</p>
+                </div>
+                <div class="absolute top-4 left-4 text-lg text-white/80 cursor-pointer">←</div>
+                <div class="absolute top-4 right-4 flex gap-4 text-base text-white/80">
+                    <span>🔍</span><span>⋮</span>
+                </div>
+            </div>
+
+            <div class="p-5 space-y-4">
+                <div class="flex gap-4 items-start text-sm">
+                    <span class="text-slate-400 text-lg mt-0.5">ℹ️</span>
+                    <div>
+                        <p class="text-slate-200 leading-relaxed">Friends, I Will Provide Best Earning App So Join This Channel And Earn You Daily <span class="text-emerald-400 font-bold">₹500 To ₹1000 Easily</span> Any Problem</p>
+                        <p class="text-[11px] text-slate-500 mt-1 uppercase tracking-wider font-semibold">Description</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4 items-center pt-3 border-t border-slate-800/60 text-sm">
+                    <span class="text-slate-400 text-lg">🔗</span>
+                    <div>
+                        <p class="text-sky-400 font-bold hover:underline cursor-pointer">t.me/TheBillionaireLoot</p>
+                        <p class="text-[11px] text-slate-500 mt-0.5 uppercase tracking-wider font-semibold">Primary Invite Link</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://t.me/YOUR_TELEGRAM_USERNAME" class="tg-link bg-[#24303f] p-3.5 flex justify-center items-center cursor-pointer hover:bg-[#2b394a] transition-colors block">
+                <span class="text-sky-400 font-bold text-sm tracking-wide uppercase">Join Channel</span>
+            </a>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-3xl relative overflow-hidden backdrop-blur-sm">
+            <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl"></div>
+            <p class="text-xs text-slate-400 mb-4 font-medium italic">"Offers hamesha limited time ke liye aate hain, don't miss out!"</p>
+            <a href="https://chat.whatsapp.com/YOUR_WHATSAPP_LINK" class="wa-link animate-shimmer block w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-bold py-4 rounded-xl uppercase tracking-wider transition-all transform hover:scale-[1.01] text-sm shadow-md flex items-center justify-center gap-2">
+                <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                    <path d="M12.004 2c-5.517 0-9.994 4.476-9.994 9.993 0 1.763.459 3.423 1.265 4.873l-1.341 4.903 5.018-1.317c1.408.766 3.014 1.204 4.722 1.204 5.517 0 10.002-4.477 10.002-9.994C21.996 6.476 17.521 2 12.004 2zm6.262 14.18c-.256.719-1.285 1.4-1.791 1.48-.466.075-1.074.135-3.13-.715-2.63-1.088-4.324-3.766-4.456-3.941-.131-.175-1.062-1.411-1.062-2.69 0-1.28.674-1.91.914-2.164.24-.254.524-.317.7-.317.175 0 .349.002.502.01.161.008.374-.061.585.446.216.518.739 1.802.803 1.93.064.129.108.279.022.45-.086.173-.129.279-.257.428-.129.15-.271.334-.387.45-.129.129-.264.269-.114.527.151.257.671 1.102 1.436 1.782.987.876 1.821 1.147 2.079 1.276.257.129.408.107.558-.064.15-.172.643-.75.815-1.007.171-.257.342-.215.579-.129.237.086 1.499.707 1.757.836.257.129.429.193.493.301.064.108.064.624-.192 1.343z"/>
+                </svg>
+                <span>Join WhatsApp Group Now</span>
+            </a>
+        </div>
+
+    </main>
+
+    <script>
+        // ⚠️ BAS IN DONO JAGAHO PAR APNA LINK DALO, PURE PAGE ME APNE AAP UPDATE HO JAYEGA!
+        const MY_TELEGRAM_LINK = "https://t.me/TheBillionaireLoot";
+        const MY_WHATSAPP_LINK = "https://whatsapp.com/channel/0029Vb8Blf88PgsJqb1Xf22D"; // <-- Apna original WhatsApp group link yahan dalo
+
+        // Auto-assign Telegram link to all target anchors
+        document.querySelectorAll('.tg-link').forEach(anchor => {
+            anchor.href = MY_TELEGRAM_LINK;
+        });
+
+        // Auto-assign WhatsApp link to all target anchors
+        document.querySelectorAll('.wa-link').forEach(anchor => {
+            anchor.href = MY_WHATSAPP_LINK;
+        });
+
+        // PERFECT COUNT-UP ANIMATION FUNCTION
+        function animateCounterValue(id, start, end, duration, suffix = "") {
+            const element = document.getElementById(id);
+            let startTime = null;
+
+            const updateStep = (currentTime) => {
+                if (!startTime) startTime = currentTime;
+                const timePassed = currentTime - startTime;
+                const progressPercentage = Math.min(timePassed / duration, 1);
+                
+                const currentNumber = Math.floor(progressPercentage * (end - start) + start);
+                element.innerText = currentNumber.toLocaleString('en-IN') + suffix;
+
+                if (progressPercentage < 1) {
+                    window.requestAnimationFrame(updateStep);
+                }
+            };
+            window.requestAnimationFrame(updateStep);
+        }
+
+        // DYNAMIC FLOATING POINT COUNTER FOR USER EARNINGS (e.g., 4.5L+)
+        function animateFloatCounter(id, start, end, duration, suffix = "") {
+            const element = document.getElementById(id);
+            let startTime = null;
+
+            const updateStep = (currentTime) => {
+                if (!startTime) startTime = currentTime;
+                const timePassed = currentTime - startTime;
+                const progressPercentage = Math.min(timePassed / duration, 1);
+                
+                const currentNumber = (progressPercentage * (end - start) + start).toFixed(1);
+                element.innerText = currentNumber + suffix;
+
+                if (progressPercentage < 1) {
+                    window.requestAnimationFrame(updateStep);
+                }
+            };
+            window.requestAnimationFrame(updateStep);
+        }
+
+        // Real-time ticking updates for "Joined Today"
+        function runLiveStatsTicker() {
+            const todayCountBox = document.getElementById('count-today');
+            let initialTodayValue = 1429;
+            
+            setInterval(() => {
+                const newJoins = Math.floor(Math.random() * 2) + 1;
+                initialTodayValue += newJoins;
+                todayCountBox.innerText = initialTodayValue.toLocaleString('en-IN');
+            }, 3500);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            // Trigger counter animations
+            animateCounterValue("count-members", 1500, 5853, 1800, "+");
+            animateFloatCounter("count-earnings", 1.0, 4.5, 1500, "L+");
+            animateCounterValue("count-today", 600, 1429, 2200, "");
+
+            // Start live pulsing ticker updates
+            setTimeout(runLiveStatsTicker, 2300);
+        });
+    </script>
+
+</body>
+</html>
